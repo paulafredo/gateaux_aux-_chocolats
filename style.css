@@ -8,15 +8,6 @@ body {
   margin: 0;
 }
 
-div.contenu {
-  background-color: white;
-  margin: 60px 10% 80px 10%;
-  padding: 0px 30px 30px 30px;
-  min-width: 350px;
-  box-shadow: 0px 0px 8px 8px rgba(192, 31, 31, 0.1);
-  overflow: visible;
-}
-
 h1 {
   text-align: center;
   margin-bottom: 12px;
@@ -72,17 +63,17 @@ table.info {
   width: 100%;
   color: white;
   background-color: #6c829dc0;
-  height: 80px;
+  height: 50px;
 }
 
 table.info td {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   vertical-align: top;
 }
 
 table.info th {
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: bottom;
   padding-bottom: 8px;
 }
@@ -96,7 +87,7 @@ img.info {
 }
 
 div.colonne {
-  width: 45%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -110,11 +101,6 @@ div.colonne h2 {
 
 div.colonne1 {
   display: inline-block;
-  margin-right: 10%;
-}
-
-div.colonne2 {
-  float: right;
 }
 
 div.ingredients p {
@@ -152,4 +138,54 @@ table.preparation td.preparation_etape {
 
 table.preparation tr {
   height: 40px;
+}
+
+/* Styles par défaut (pour téléphone) */
+div.contenu {
+  background-color: white;
+  margin: 40px 8px 40px 8px; /* marge : haut/bas 40px, gauche/droite 8px */
+  padding: 0px 8px 20px 8px; /* haut 0px, droite/gauche 8px, bas 20px */
+  box-shadow: 0px 0px 8px rgba(192, 31, 31, 0.1); /* ombre subtile */
+  overflow: visible;
+  box-sizing: border-box; /* inclut le padding dans les dimensions */
+}
+
+/* Styles pour écran large (ordinateur) */
+@media only screen and (min-width: 768px) {
+  div.contenu {
+    margin: 60px 10% 80px; /* haut 60px, droite/gauche 10%, bas 80px */
+    padding: 0px 30px; /* haut 0px, droite/gauche 30px, bas 30px */
+    min-width: 350px;
+  }
+  table.info {
+    height: 80px;
+  }
+
+  table.info td {
+    font-size: 14px;
+  }
+
+  table.info th {
+    font-size: 16px;
+  }
+  div.colonne {
+    width: 45%;
+  }
+
+  div.colonne1 {
+    margin-right: 10%;
+  }
+
+  div.colonne2 {
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  div.contenu {
+    margin-left: auto; /* gauche */
+    margin-right: auto; /* droit */
+
+    width: 645px;
+  }
 }
