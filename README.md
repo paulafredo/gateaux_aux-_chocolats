@@ -2,7 +2,7 @@ Gâteaux au Chocolat 🍫
 Bienvenue sur mon projet Gâteaux au Chocolat, un site web conçu pour apprendre et pratiquer le HTML et le CSS .
 
 
-![Lien vers le site 🌐]([https://komarev.com/ghpvc/?username=hiFredo&label=Profile%20views&color=blue&style=plasti](https://gateaux-aux-chocolats.vercel.app/))
+Lien vers le site 🌐 : https://gateaux-aux-chocolats.vercel.app/
 
 ## 🛠️ Technologies utilisées
 HTML5 
